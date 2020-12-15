@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <ul>
+       {{range .Wisdom}}
+       <li>{{uc .Name}} -- {{.Motto}}</li>
+     
+       {{end}}
+    </ul>
+
+    <br/>
+    <ul>
+        {{range .Transport}}
+        <li>{{.Manufacturer}} -- {{.Model}} -- {{.Doors}}</li>
+          <li>{{drive .Model}} </li>
+        {{end}}
+    </ul>
+
+    <h2>{{date .Nako}}</h2>
+     <h2>{{.Nako}}</h2>
+
+</body>
+</html>
